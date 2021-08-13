@@ -6,6 +6,12 @@ library(tidyverse); library(dslabs); library(lubridate)
 library(tableone); library(knitr); library(broom)
 library(gtsummary)
 
+# R commander
+options(Rcmdr=list(plugins="RcmdrPlugin.EZR"))
+
+library(RcmdrMisc)
+library(Rcmdr)
+
 # Read data frame
 dir()  # look for files in the directory
 aline <- read.csv("aline_full_cohort_data.csv")
